@@ -1,0 +1,23 @@
+(NAT)
+When your Network Card On A VirtualBox is set to NAT it will act as a Logically Separated Network Where that virtual Machine Instance Is acting AS the Only node in the network
+
+(NAT NETWORK)
+If you set the option to NAT Network instead it will create a virtual machine network where If say you have two virtual machines running then they will be able to ping each other. But Devices on the existing physical network will not be able to 
+
+(Bridged Networking)
+A bridge adapter Connects the Virtual Network adapter to the existing physical network that the VirtualBox host is connected to 
+
+(Internal Networking)
+Technically Everything that can be Done Using Bridged Networking can be done using internal networking. There are several Security Advantages though with internal Networking. For example since all traffic in Bridged networking Must first flow through the Host OS it is possibly to perform a MITM attack on the Host OS and listen for all of the traffic relatively easily. if for any  you prefer two or more VMs on the same machine to communicate privately, hiding their data from both the host system and the user, bridged networking therefore is not an option.
+
+Internal networks are created automatically as needed. There is no central configuration. Every internal network is identified simply by its name. Once there is more than one active virtual network card with the same internal network ID, the Oracle VM VirtualBox support driver will automatically wire the cards and act as a network switch. The Oracle VM VirtualBox support driver implements a complete Ethernet switch and supports both broadcast/multicast frames and promiscuous mode
+
+The internal Network Will allow you to access to your physical network without communicating through a Host OS. But you cannot access the internet. An internal network is designed to allow communication between VMs on that network. C
+
+(Host Only Networking)
+. As with bridged networking, the virtual machines can talk to each other and the host as if they were connected through a physical Ethernet switch. As with internal networking, a physical networking interface need not be present, and the virtual machines cannot talk to the world outside the host since they are not connected to a physical networking interface. 
+
+
+
+(Generic Networking)
+
