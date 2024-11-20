@@ -40,3 +40,5 @@ What you got wrong:
 Summary:
 
 In a digital signature scheme, the sender signs a hash of the message with their private key, and the recipient verifies the signature using the sender's public key. The CA ensures the public key belongs to the correct entity by issuing certificates after validating identities.
+
+A digital certificate (often referred to as a public key certificate) is an electronic document that binds a public key to an entity's identity. It includes information about the entity, the public key, and the Certificate Authority (CA) that issued the certificate. Digital certificates are used to verify the authenticity of the public key and to ensure that the public key belongs to the entity identified in the certificate.
