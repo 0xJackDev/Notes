@@ -1,0 +1,42 @@
+Your description of how digital signatures work has some inaccuracies in the explanation of the steps and roles of keys in the process. Let me clarify how digital signatures work, particularly in the context of code signing and certificate authorities (CAs):
+1. Hashing the Message (or Code):
+
+    A hash of the message or code is created using a cryptographic hash function (e.g., SHA-256). This creates a unique representation (fixed-length string) of the original content.
+
+2. Signing the Hash:
+
+    The private key of the signer's key pair is used to sign the hash. This step produces the digital signature. The private key is kept secret and is never shared.
+    The digital signature is essentially an encrypted version of the hash, created using the signer's private key.
+
+3. The Role of the Certificate Authority (CA):
+
+    A Certificate Authority (CA) is responsible for issuing digital certificates that contain the public key associated with the signer's private key. The CA verifies the identity of the signer before issuing the certificate.
+    The public key included in the certificate is used by others to verify the signature.
+
+4. Sending the Signed Code:
+
+    The signed code (or message) is sent to the recipient, along with the digital signature and the signer's certificate (which includes the public key).
+
+5. Verification Process (at the end-user's side):
+
+    The recipient performs the following steps:
+        Hash the received message (or code) using the same hash function.
+        Use the signer's public key (extracted from the certificate) to decrypt the digital signature. This decryption should return the original hash that was created when the message was signed.
+        Compare the decrypted hash with the locally computed hash of the received message.
+        If both hashes match, it means the signature is valid, and the message has not been tampered with.
+
+Key Clarifications:
+
+    Private Key: Used to sign (encrypt the hash) by the sender.
+    Public Key: Used by the recipient to verify the signature (decrypt the signature and check the hash).
+    The recipient does not encrypt the hash. They decrypt the signature with the public key and compare it to a newly computed hash of the received message.
+
+What you got wrong:
+
+    Encryption/Decryption roles: The recipient decrypts the digital signature using the public key (not encrypts the hash).
+    Hash: The hash is signed by the private key and the public key is used for verification, not the other way around.
+    The public key is used to verify, not encrypt, and the private key is used to sign.
+
+Summary:
+
+In a digital signature scheme, the sender signs a hash of the message with their private key, and the recipient verifies the signature using the sender's public key. The CA ensures the public key belongs to the correct entity by issuing certificates after validating identities.
