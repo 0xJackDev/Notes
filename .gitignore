@@ -1,0 +1,12 @@
+# Ignore all files and folders
+*
+
+# Except the .gitignore file
+!.gitignore
+
+# Except the obsidian folder and its contents
+!obsidian/
+!obsidian/**
+
+# Optional: Exclude the .obsidian folder if desired
+.obsidian/
