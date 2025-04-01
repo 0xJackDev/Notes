@@ -1,0 +1,21 @@
+When Normally Listening on a Network you only see the data frames sent over a network, You will not see the Control or management frames on wireshark unless you turn your network adapter on monitor mode then you will capture and see Control and management packets as well as data packets. Although the KEY different is that when your network adapter isn't in monitor mode the sniffer running will only capture data from that machine. While in monitor mode you capture ALL traffic within range, this could even include traffic from another wireless network near you.
+
+You will also see Beacon frames which are the management frames that APs transmit regularly to advertise their network information including the SSID. This can be used by WPS(Wifi Positioning Systems). 
+
+There is multiple ways you can go about cracking a wifi networks password Offline. The Two Most common being a Capturing the four-Way Handshake and a PMKID attack
+
+https://www.nccgroup.com/us/research-blog/pmkid-attacks-debunking-the-80211r-myth/
+
+
+
+
+WEP is super weak and an older wifi security protocol which is horrible. 
+
+
+
+https://www.kismetwireless.net/ Is what google uses for war driving
+
+
+Also do this today
+
+https://cryptohack.org/challenges/web/
