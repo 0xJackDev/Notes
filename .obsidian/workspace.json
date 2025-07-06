@@ -1,0 +1,235 @@
+{
+  "main": {
+    "id": "9c3f031e001c999c",
+    "type": "split",
+    "children": [
+      {
+        "id": "eb0d7a7066c9ccee",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c48d73c1afd2be81",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CPTS/Password Attacks/Credential Hunting in Linux.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Credential Hunting in Linux"
+            }
+          },
+          {
+            "id": "35f9f98b8610d8f5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Useful/Windows Extract SAM +LSA AND TRANSFER TO MACHINE W SMB and LSASS.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Windows Extract SAM +LSA AND TRANSFER TO MACHINE W SMB and LSASS"
+            }
+          },
+          {
+            "id": "2e6ba96786f844bc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Projects_Malware/I want my malware on run to do these things in order.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "I want my malware on run to do these things in order"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "e7d3ee11b79ae12f",
+    "type": "split",
+    "children": [
+      {
+        "id": "4514aff0ee7cbab1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7c06c25699f651cd",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "e4cdb5addf11903e",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "f2a72b7120c30ab5",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "6eae25519ecd0f14",
+    "type": "split",
+    "children": [
+      {
+        "id": "c5c1e8c2bd5654a5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d18d110cec490aa6",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "sql.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for sql"
+            }
+          },
+          {
+            "id": "ba80343d17705445",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "sql.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from sql"
+            }
+          },
+          {
+            "id": "ab3a2c1b73331462",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "feefa523d36a6b32",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "sql.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of sql"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "c48d73c1afd2be81",
+  "lastOpenFiles": [
+    "CPTS/Password Attacks/Linux Authentication Process.md",
+    "CPTS/Password Attacks/Credential Hunting in Linux.md",
+    "Welcome.md",
+    "Website idea.md",
+    "Website Hackthebox clone.md",
+    "Untitled 1.canvas",
+    "Untitled.md",
+    "Untitled.canvas",
+    "Project.md",
+    "2025-07-05.md",
+    "2025-01-26.md",
+    "Reversing/stash.md",
+    "Reversing/0xInfections.md",
+    "Reversing/0xinfection Stack.md",
+    "Reversing/0xInfection part 3.md",
+    "Reversing/0xInfection Part 2.md",
+    "Reversing/0xinfection Heap.md",
+    "React/Hooks.md",
+    "Projects_Malware/I want my malware on run to do these things in order.md",
+    "Useful/VHOSTS.md",
+    "Useful/Windows Extract SAM +LSA AND TRANSFER TO MACHINE W SMB and LSASS.md",
+    "Useful/XXE.md",
+    "sql.md",
+    "CPTS/CTFS/Planning HTB.md",
+    "CPTS/Password Attacks/Credential Hunting in windows.md",
+    "CPTS/Password Attacks/Attacking SAM (Windows).md",
+    "CPTS/File transfers Windows.md",
+    "CPTS/Footprinting..md",
+    "Projects_Malware",
+    "HTB EASY",
+    "CPTS/Password Attacks",
+    "CryptoHack",
+    "Untitled 1",
+    "GO GO GO!",
+    "CPTS/CTFS",
+    "CPTS/Shells and payloads",
+    "React",
+    "CPTS/Information Gather Web"
+  ]
+}
