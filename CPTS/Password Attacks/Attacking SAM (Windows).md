@@ -1,3 +1,9 @@
+🔍 What’s Being Saved?
+Hive	Contents
+HKLM\SAM	NTLM hashes of local accounts (this is the SAM database)
+HKLM\SECURITY	LSA Secrets (service passwords, auto-logon creds, cached domain creds)
+HKLM\SYSTEM	Boot key used to decrypt both SAM and SECURITY hives
+
 
 SAM aka Security account manager is a database file that stores hashed user account passwords for the local system
 it is located at
@@ -16,8 +22,8 @@ there are three registry hives we can copy if we have local admin access on the 
 |                 |                                                                                                                                                            |
 | --------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `hklm\sam`      | Contains the hashes associated with local account passwords. We will need the hashes so we can crack them and get the user account passwords in cleartext. |
-| `hklm\system`   | Contains the system bootkey, which is used to encrypt the SAM database. We will need the bootkey to decrypt the SAM database.                              |
-| `hklm\security` | Contains cached credentials for domain accounts. We may benefit from having this on a domain-joined Windows target.                                        |
+| `hklm\system`   |  Also contains LSA secrets Contains the system bootkey, which is used to encrypt the SAM database. We will need the bootkey to decrypt the SAM database.                              |
+| `hklm\security` | Contains cached credentials for domain accounts. We may benefit from having this on a domain-joined Windows target. Boot key used to decrypt both SAM and SECURITY hives                                       |
 
 
 We can create backups of these hives using the reg.exe utility
